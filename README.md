@@ -123,6 +123,22 @@ Before running the project:
 
 ---
 
+## 🔐 WiFi Configuration (ESP32)
+
+The ESP32 firmware requires a separate configuration file for WiFi credentials.
+
+Create a file named: secrets.h
+
+in the same folder as the ESP32 code, and define:
+```cpp
+#define WIFI_SSID "YOUR_WIFI_NAME"
+#define WIFI_PASSWORD "YOUR_WIFI_PASSWORD"
+```
+⚠️ This file is not included in the repository for security reasons.
+Make sure to add it to .gitignore.
+
+---
+
 ## 🚀 Getting Started
 
 1. Upload the firmware to the ESP32  
