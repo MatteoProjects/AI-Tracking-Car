@@ -58,3 +58,66 @@ nunit-*.xml
 
 # Wifi password and SSID
 secrets*
+
+## 📁 📄 .gitignore per C++ / Arduino / ESP32
+
+Aggiungi questo al tuo `.gitignore` (puoi unirlo a quello .NET):
+
+```gitignore
+# ----------------------------
+# Arduino / ESP32 / C++
+# ----------------------------
+
+# Build folders
+build/
+out/
+Debug/
+Release/
+
+# Arduino temp files
+*.ino.cpp
+*.ino.cpp.o
+*.ino.elf
+*.ino.hex
+
+# Object files
+*.o
+*.obj
+*.d
+*.exe
+*.out
+
+# Libraries (optional)
+lib/
+
+# VSCode
+.vscode/
+
+# PlatformIO
+.pio/
+.pioenvs/
+.piolibdeps/
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake-build-*/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Secrets (IMPORTANT)
+secrets.h
+*.env
+
+# Temporary files
+*.tmp
+*.temp
+
+# Backup files
+*.bak
+*.old
